@@ -4,7 +4,7 @@ ds=imageDatastore('self','IncludeSubfolders',true,'LabelSource','foldernames');
 actornames=ds.Labels
 net=alexnet;
 
-for i = 1:103
+for i = 1:148
     data=readimage(ds,i);
     data=imresize(data,[227 227]);
     
